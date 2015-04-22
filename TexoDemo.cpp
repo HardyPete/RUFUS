@@ -584,6 +584,8 @@ bool TexoDemo::programSequence()
         rx.acquisitionDepth = 0;
         // adjust the line duration if triggering DAQ in plane wave mode
         rx.customLineDuration = 100000; // 100 usec
+        // Line duration goes from the start of the transmit to the end of the recieve
+        // covers all activity
 
         if (m_txoParams.demoInd == 0)   // set the transmit to plane wave
         {
